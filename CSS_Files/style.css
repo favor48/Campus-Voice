@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    font-size: 50px;
+    color: palevioletred;
+    text-align: center;
+    font-style: italic ;
+}
+body{
+    background-color: whitesmoke;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.nav-bar{
+    position: sticky;
+    border-bottom: 2px solid black;
+    color: black;
+    background-color: greenyellow;
+    z-index: 100;
+    text-transform: uppercase;
+    
+
+}
+.nav-link{
+gap: 20px; 
+display: flex; 
+align-items: center; 
+justify-content: right; 
+font-size: 30px;
+}
+.nav-link a{
+    color: blueviolet;
+}
+footer{
+     width: 100%;
+    padding: 30px 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: purple
+}
+.hero-image{
+    width: 1000px;
+    height: 1000px;
+    border-radius: 500px;
+}
