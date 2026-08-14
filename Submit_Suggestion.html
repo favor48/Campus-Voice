@@ -1,13 +1,340 @@
-<!--Allows students to send suggestions-->
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Submit Suggestion</title>
-      <link rel="stylesheet" href="style.css">
+
+    <title>Submit Suggestion | CampusVoice</title>
+
+    <link rel="stylesheet" href="./Submit_Suggestion.css">
 </head>
+
 <body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                <img src="Images_Files/logo.png" alt="CampusVoice Logo">
+                <span>CampusVoice</span>
+            </a>
+
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+
+                <a href="Student_Dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="Submit_Complaint.html">
+                    Complaint
+                </a>
+
+                <a href="Submit_Suggestion.html" class="active">
+                    Suggestion
+                </a>
+
+                <a href="Track_Complaint.html">
+                    Track Complaint
+                </a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="suggestion-page">
+
+        <section class="suggestion-intro">
+
+            <span class="page-label">
+                STUDENT FEEDBACK
+            </span>
+
+            <h1>Share Your Suggestion</h1>
+
+            <p>
+                Your ideas can help improve our school.
+                Share your suggestions with school management
+                and contribute to creating a better learning environment.
+            </p>
+
+        </section>
+
+
+        <section class="suggestion-container">
+
+            <!-- SUGGESTION FORM -->
+            <div class="suggestion-form-wrapper">
+
+                <form class="suggestion-form">
+
+                    <h2>Submit a Suggestion</h2>
+
+                    <p class="form-intro">
+                        Please provide clear and useful information
+                        about your suggestion.
+                    </p>
+
+
+                    <div class="form-group">
+
+                        <label for="suggestion-title">
+                            Suggestion Title
+                        </label>
+
+                        <input
+                            type="text"
+                            id="suggestion-title"
+                            name="suggestion-title"
+                            placeholder="Enter a short title for your suggestion"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="category">
+                            Category
+                        </label>
+
+                        <select id="category" name="category" required>
+
+                            <option value="">
+                                Select a category
+                            </option>
+
+                            <option value="classrooms">
+                                Classrooms
+                            </option>
+
+                            <option value="facilities">
+                                School Facilities
+                            </option>
+
+                            <option value="sanitation">
+                                Sanitation
+                            </option>
+
+                            <option value="environment">
+                                School Environment
+                            </option>
+
+                            <option value="teaching">
+                                Teaching and Learning
+                            </option>
+
+                            <option value="student-life">
+                                Student Life
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="suggestion">
+                            Your Suggestion
+                        </label>
+
+                        <textarea
+                            id="suggestion"
+                            name="suggestion"
+                            placeholder="Describe your suggestion in detail..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="anonymous-option">
+
+                        <input
+                            type="checkbox"
+                            id="anonymous"
+                            name="anonymous"
+                        >
+
+                        <label for="anonymous">
+
+                            Submit this suggestion anonymously
+
+                            <span>
+                                Your identity will not be displayed
+                                with your suggestion.
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="submit-suggestion-btn"
+                    >
+                        Submit Suggestion
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- GUIDELINES -->
+            <aside class="suggestion-guidelines">
+
+                <h3>
+                    Suggestion Guidelines
+                </h3>
+
+                <p>
+                    Help us understand and act on your idea
+                    by following these simple guidelines.
+                </p>
+
+
+                <div class="guideline">
+
+                    <strong>
+                        Be specific
+                    </strong>
+
+                    <span>
+                        Clearly explain your idea and what
+                        improvement you would like to see.
+                    </span>
+
+                </div>
+
+
+                <div class="guideline">
+
+                    <strong>
+                        Be constructive
+                    </strong>
+
+                    <span>
+                        Focus on practical ideas that can
+                        contribute positively to the school.
+                    </span>
+
+                </div>
+
+
+                <div class="guideline">
+
+                    <strong>
+                        Be respectful
+                    </strong>
+
+                    <span>
+                        Use respectful and appropriate language
+                        when sharing your suggestion.
+                    </span>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <img
+                    src="Images_Files/logo.png"
+                    alt="CampusVoice Logo"
+                >
+
+                <p>
+                    Empowering students to speak up and helping
+                    institutions create a better learning environment.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="Student_Dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="Submit_Complaint.html">
+                    Submit Complaint
+                </a>
+
+                <a href="Submit_Suggestion.html">
+                    Submit Suggestion
+                </a>
+
+                <a href="Track_Complaint.html">
+                    Track Complaint
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Resources</h3>
+
+                <a href="#">Guidelines</a>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Contact Us</h3>
+
+                <p>campusvoice@school.edu</p>
+                <p>+237 000 000 000</p>
+                <p>School Administrative Block</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 CampusVoice. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
 </body>
+
 </html>
