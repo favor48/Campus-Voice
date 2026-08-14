@@ -1,32 +1,255 @@
-<!---- Introduces CampusVoice and provides navigation.--->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="../CSS_Files/style.css">
+
+    <title>CampusVoice | Your Voice. A Better Campus.</title>
+
+    <link rel="stylesheet" href="CSS_Files/style.css">
 </head>
 
 <body>
-    <nav class="nav-bar">
-        <div class="logo">Campus Voice</div>
-        <div class="nav-link">
-            <a href="Home.html">Home</a>
-            <a href="Student_Dashboard.html">Student Dashboard</a>
-            <a href="Submit_Complaint.html">Submit Complaint</a>
-            <a href="Submit_Suggestion.html">Submit Suggestion</a>
-            <a href="Track_Complaint.html">Track Complaint</a>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-content">
+
+            <a href="index.html" class="logo">
+                <img src="./Images_Files/logo.png" alt="CampusVoice Logo">
+                <span>CampusVoice</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="complaint.html">Complaint</a>
+                <a href="suggestion.html">Suggestion</a>
+                <a href="track.html">Track Complaint</a>
+            </nav>
+            <button class="menu-btn">
+                Login
+            </button>
         </div>
-    </nav>
-    <div class="hero-image">
-            <img src="../Images_Files/image.png" alt="Fevi image" class="hero-image">
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="hero-label">WELCOME TO CAMPUSVOICE</span>
+
+                    <h1>
+                        Your Voice.
+                        <span>A Better Campus.</span>
+                    </h1>
+
+                    <p>
+                        Report school problems, share your suggestions,
+                        and help create a better learning environment
+                        for everyone.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="complaint.html" class="btn btn-primary">
+                            Submit a Complaint
+                        </a>
+
+                        <a href="suggestion.html" class="btn btn-secondary">
+                            Make a Suggestion
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="hero-image">
+                    <img src="./Images_Files/hero image.png"
+                         alt="Students collaborating on campus">
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- How CampusVoice Works -->
+        <section class="how-it-works">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span>HOW IT WORKS</span>
+                    <h2>Make Your Voice Heard</h2>
+                    <p>
+                        CampusVoice makes it simple to report problems
+                        and share ideas with your school management.
+                    </p>
+                </div>
+
+                <div class="steps">
+
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <h3>Report</h3>
+                        <p>
+                            Submit a complaint or report a school-related
+                            problem quickly and conveniently.
+                        </p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <h3>Track</h3>
+                        <p>
+                            Use your reference number to follow the
+                            progress of your complaint.
+                        </p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <h3>Resolve</h3>
+                        <p>
+                            Follow the progress until your reported
+                            issue has been addressed.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span>WHY USE CAMPUSVOICE?</span>
+                    <h2>A Better Way to Speak Up</h2>
+                </div>
+
+                <div class="feature-grid">
+
+                    <div class="feature-card">
+                        <div class="feature-icon"></div>
+                        <h3>Easy to Use</h3>
+                        <p>
+                            Submit complaints and suggestions
+                            through a simple and convenient interface.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"></div>
+                        <h3>Anonymous Reporting</h3>
+                        <p>
+                            Report sensitive issues anonymously
+                            when you prefer not to reveal your identity.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"></div>
+                        <h3>Track Progress</h3>
+                        <p>
+                            Keep track of your complaint using
+                            your unique reference number.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"></div>
+                        <h3>Share Ideas</h3>
+                        <p>
+                            Give useful suggestions that can help
+                            improve your school environment.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Call To Action -->
+        <section class="cta">
+            <div class="container cta-content">
+
+                <h2>Your Voice Can Make a Difference.</h2>
+
+                <p>
+                    Have a problem to report or an idea to share?
+                    Let CampusVoice help you make your voice heard.
+                </p>
+
+                <div class="cta-buttons">
+                    <a href="complaint.html" class="btn btn-light">
+                        Submit a Complaint
+                    </a>
+
+                    <a href="suggestion.html" class="btn btn-outline-light">
+                        Share a Suggestion
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div>
+                <h3>CampusVoice</h3>
+                <p>
+                    Your voice. A better campus.
+                </p>
+                <p>
+                    Empowering Students to speak up <br>
+                    and helping institution create a <br>
+                    better learning environment. <br>
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="complaint.html">Complaint</a>
+                <a href="suggestion.html">Suggestion</a>
+                <a href="track.html">Track Complaint</a>
+            </div>
+         <div class="footer-column">
+           <h4>Resources</h4>
+
+           <a href="#"> Guidelines</a><br>
+           <a href="#">FAQ</a><br>
+           <a href="#">Privacy Policy</a><br>
+           <a href="#">Terms of Use</a><br>
+
+         </div>   
+         <div class="footer-column contact">
+            <h4>Contact Us</h4>
+            <p>favorbobah@gmail.com</p>
+            <p>+237 677 48 24 03</p>
+            <p>School Administrative Block</p>
+
+         </div>
+
         </div>
-    
-    <footer>
-        <p>Campus Voice &copy; Reserved 2026</p>
+
+        <div class="copyright">
+            <p>&copy; 2026 CampusVoice. All rights reserved.</p>
+        </div>
     </footer>
+
 </body>
 </html>
