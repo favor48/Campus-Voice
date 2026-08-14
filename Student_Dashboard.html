@@ -4,12 +4,411 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Student Dashboard</title>
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="CSS_Files/style.css">
 </head>
 
 <body>
-    
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                <img src="Images_Files/logo.png" alt="CampusVoice Logo">
+                <span>CampusVoice</span>
+            </a>
+
+            <nav class="navigation">
+
+                <a href="index.html">Home</a>
+
+                <a href="Student_Dashboard.html" class="active">
+                    Dashboard
+                </a>
+
+                <a href="Submit_Complaint.html">
+                    Complaint
+                </a>
+
+                <a href="Submit_Suggestion.html">
+                    Suggestion
+                </a>
+
+                <a href="Track_Complaint.html">
+                    Track Complaint
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- DASHBOARD -->
+    <main class="dashboard-page">
+
+        <section class="dashboard-intro">
+
+            <div>
+
+                <span class="page-label">
+                    STUDENT DASHBOARD
+                </span>
+
+                <h1>
+                    Welcome to CampusVoice
+                </h1>
+
+                <p>
+                    Manage your complaints and suggestions,
+                    and keep track of your reports.
+                </p>
+
+            </div>
+
+            <a href="Submit_Complaint.html" class="primary-button">
+                Submit a Complaint
+            </a>
+
+        </section>
+
+
+        <!-- STATISTICS -->
+
+        <section class="dashboard-stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">C</div>
+
+                <div>
+                    <span>Total Complaints</span>
+                    <strong>03</strong>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">P</div>
+
+                <div>
+                    <span>Pending</span>
+                    <strong>01</strong>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">R</div>
+
+                <div>
+                    <span>Resolved</span>
+                    <strong>02</strong>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">S</div>
+
+                <div>
+                    <span>Suggestions</span>
+                    <strong>02</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECENT COMPLAINTS -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>Recent Complaints</h2>
+
+                    <p>
+                        View the latest complaints you have submitted.
+                    </p>
+                </div>
+
+                <a href="Track_Complaint.html">
+                    Track a Complaint
+                </a>
+
+            </div>
+
+
+            <div class="complaints-table">
+
+                <div class="table-header">
+
+                    <span>Reference Number</span>
+                    <span>Category</span>
+                    <span>Date</span>
+                    <span>Status</span>
+                    <span>Action</span>
+
+                </div>
+
+
+                <div class="table-row">
+
+                    <span class="reference">
+                        CV-2026-00125
+                    </span>
+
+                    <span>
+                        Classroom
+                    </span>
+
+                    <span>
+                        Aug 14, 2026
+                    </span>
+
+                    <span>
+                        <small class="status under-review">
+                            Under Review
+                        </small>
+                    </span>
+
+                    <a href="Track_Complaint.html">
+                        View
+                    </a>
+
+                </div>
+
+
+                <div class="table-row">
+
+                    <span class="reference">
+                        CV-2026-00118
+                    </span>
+
+                    <span>
+                        Electricity
+                    </span>
+
+                    <span>
+                        Aug 10, 2026
+                    </span>
+
+                    <span>
+                        <small class="status in-progress">
+                            In Progress
+                        </small>
+                    </span>
+
+                    <a href="Track_Complaint.html">
+                        View
+                    </a>
+
+                </div>
+
+
+                <div class="table-row">
+
+                    <span class="reference">
+                        CV-2026-00105
+                    </span>
+
+                    <span>
+                        Sanitation
+                    </span>
+
+                    <span>
+                        Aug 05, 2026
+                    </span>
+
+                    <span>
+                        <small class="status resolved">
+                            Resolved
+                        </small>
+                    </span>
+
+                    <a href="Track_Complaint.html">
+                        View
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUICK ACTIONS -->
+
+        <section class="quick-actions">
+
+            <h2>
+                Quick Actions
+            </h2>
+
+            <div class="action-grid">
+
+                <a href="Submit_Complaint.html" class="action-card">
+
+                    <div class="action-icon">
+                        +
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Submit Complaint
+                        </h3>
+
+                        <p>
+                            Report a school-related problem.
+                        </p>
+
+                    </div>
+
+                </a>
+
+
+                <a href="Submit_Suggestion.html" class="action-card">
+
+                    <div class="action-icon">
+                        +
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Submit Suggestion
+                        </h3>
+
+                        <p>
+                            Share an idea to improve the school.
+                        </p>
+
+                    </div>
+
+                </a>
+
+
+                <a href="Track_Complaint.html" class="action-card">
+
+                    <div class="action-icon">
+                        →
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Track Complaint
+                        </h3>
+
+                        <p>
+                            Check the progress of a complaint.
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <img
+                    src="Images_Files/logo.png"
+                    alt="CampusVoice Logo"
+                >
+
+                <p>
+                    Empowering students to speak up and helping
+                    institutions create a better learning environment.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="Student_Dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="Submit_Complaint.html">
+                    Submit Complaint
+                </a>
+
+                <a href="Submit_Suggestion.html">
+                    Submit Suggestion
+                </a>
+
+                <a href="Track_Complaint.html">
+                    Track Complaint
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Resources</h3>
+
+                <a href="#">Guidelines</a>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Contact Us</h3>
+
+                <p>campusvoice@school.edu</p>
+                <p>+237 000 000 000</p>
+                <p>School Administrative Block</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 CampusVoice. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
 </body>
 
 </html>
