@@ -7,7 +7,10 @@
     <title>CampusVoice | Your Voice. A Better Campus.</title>
 
     <link rel="stylesheet" href="CSS_Files/style.css">
-   <link rel="stylesheet" href="./CSS_Files/track.css" 
+   <link rel="stylesheet" href="./CSS_Files/track.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
 </head>
 
 <body>
@@ -27,7 +30,26 @@
                 <a href="Submit_Complaint.html">Complaint</a>
                 <a href="Submit_Suggestion.html">Suggestion</a>
                 <a href="Track_Complaint.html">Track Complaint</a>
+
+                <button
+        class="hamburger"
+        id="hamburger"
+        type="button"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        
             </nav>
+            <div class="nav2" id="mobile">
+            <div class="second-nav">
+                 <a href="index.html" class="active">Home</a>
+                <a href="Student_Dashboard.html">Dashboard</a>
+                <a href="Submit_Complaint.html">Complaint</a>
+                <a href="Submit_Suggestion.html">Suggestion</a>
+                <a href="Track_Complaint.html">Track Complaint</a>
+
+            </div>
+        </div>
             <!-- <button class="menu-btn"> 
                 Login
             </button>-->
@@ -319,6 +341,7 @@
     </footer>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
