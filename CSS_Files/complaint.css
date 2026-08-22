@@ -346,13 +346,11 @@ a {
 }
 
 
-/* ================================
-   FOOTER
-================================ */
+/* FOOTER */
 
 .footer {
-    background: #061B3A;
-    color: #FFFFFF;
+    background: #061b3a;
+    color: #ffffff;
 }
 
 .footer-container {
@@ -363,7 +361,8 @@ a {
 
     display: grid;
 
-    grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+    grid-template-columns:
+        1.6fr 1fr 1fr 1.2fr;
 
     gap: 50px;
 }
@@ -376,7 +375,7 @@ a {
 .footer-brand p {
     max-width: 300px;
 
-    color: #CBD5E1;
+    color: #cbd5e1;
 
     font-size: 14px;
     line-height: 1.7;
@@ -395,12 +394,12 @@ a {
 
 .footer-column a,
 .footer-column p {
-    color: #CBD5E1;
+    color: #cbd5e1;
     font-size: 14px;
 }
 
 .footer-column a:hover {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .footer-bottom {
@@ -412,16 +411,30 @@ a {
 }
 
 .footer-bottom p {
-    color: #CBD5E1;
+    color: #cbd5e1;
     font-size: 13px;
 }
 
 
-/* ================================
-   RESPONSIVE
-================================ */
+/* RESPONSIVE */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+
+    .dashboard-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .action-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 700px) {
 
     .nav-container {
         flex-direction: column;
@@ -434,29 +447,52 @@ a {
         gap: 15px;
     }
 
-    .complaint-container {
-        grid-template-columns: 1fr;
+    .dashboard-intro {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .complaint-intro h1 {
-        font-size: 32px;
+    .dashboard-intro h1 {
+        font-size: 30px;
+    }
+
+    .table-header {
+        display: none;
+    }
+
+    .table-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
     }
 }
 
 
 @media (max-width: 500px) {
 
-    .complaint-page {
-        padding: 50px 18px 70px;
+    .dashboard-page {
+        padding: 45px 18px 70px;
     }
 
-    .complaint-form-wrapper,
-    .complaint-guidelines {
-        padding: 22px;
+    .dashboard-stats {
+        grid-template-columns: 1fr;
     }
 
-    .complaint-intro h1 {
-        font-size: 28px;
+    .dashboard-intro h1 {
+        font-size: 27px;
     }
 
+    .primary-button {
+        width: 100%;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        padding: 45px 25px;
+    }
 }
