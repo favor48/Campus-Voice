@@ -87,9 +87,8 @@ a{
     color:#2563EB;
 }
 .hamburger{
-    display: block;
+    display: none;
 }
-
 .nav2{
     display: none;
 }
@@ -476,6 +475,7 @@ section{
     padding: 25px;
     transition:.3s;
     display:inline-block;
+}
 }
 
 @media(max-width: 600px){
